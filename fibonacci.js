@@ -1,11 +1,10 @@
 function fibonacci(num) {
-  let [numOne, numTwo, fib] = [0, 1, 0];
+  let [numOne, numTwo, sum] = [0, 1, 0];
   for (let i = 1; i < num; i++) {
-    fib = numOne + numTwo
+    sum = numOne + numTwo
     numOne = numTwo
-    numTwo = fib 
+    numTwo = sum 
   }
-return fib
+return sum
 }
-
 module.exports = fibonacci;
